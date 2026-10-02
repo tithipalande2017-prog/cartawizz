@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CARTAWIZ — Professional spatial mapping and magical property audits for estates, institutions, and businesses.">
+  <title>CARTAWIZ — Magical Spatial Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caacupe+One&family=Oswald:wght@200..700&family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/particles.css">
+
+</head>
+<body>
+  <div id="gold-particles" class="gold-particles" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="icon-compass-star" viewBox="0 0 24 24">
+      <path d="M12 2v20M2 12h20M12 12l8-8M12 12L4 4M12 12l8 8M12 12L4 20" stroke-width="1"/>
+    </symbol>
+    <symbol id="icon-divider" viewBox="0 0 120 24">
+      <circle cx="60" cy="12" r="10" stroke-width="0.5" fill="none"/>
+      <path d="M60 2v20M50 12h20" stroke-width="0.75"/>
+    </symbol>
+  </svg>
+
+  <header class="site-nav" role="banner">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="#" aria-label="CARTAWIZ home">
+
+        <!-- TODO: export cropped logo-mark.png and logo-wordmark.png -->
+
+        <img src="assets/logo.png" alt="" width="140" height="44">
+      </a>
+      <nav class="site-nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#property-audits">Property Audits</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--outline site-nav__cta" href="request-audit.html">Request Audit</a>
+      <button type="button" class="site-nav__burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+       <!--- LOGO IS CROPPED NEEDS TO BE FIXEED LATER --->
+
+  <nav id="mobile-menu" class="mobile-menu" hidden aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#property-audits">Property Audits</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn--outline" href="request-audit.html">Request Audit</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true">
+        <svg class="hero__compass motif" viewBox="0 0 200 200">
+          <title>Compass rose</title>
+          <circle cx="100" cy="100" r="90" stroke-width="0.5" opacity="0.5"/>
+          <circle cx="100" cy="100" r="60" stroke-width="0.5" opacity="0.4"/>
+          <ellipse cx="100" cy="100" rx="95" ry="35" transform="rotate(-25 100 100)" stroke-width="0.5"/>
+          <use href="#icon-compass-star" x="88" y="88" width="24" height="24"/>
+        </svg>
+        <svg class="hero__plan line-draw" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+          <g class="hero-plan-stroke" fill="none" stroke="currentColor" stroke-width="0.75">
+            <rect x="80" y="60" width="640" height="480" stroke-width="1.5"/>
+            <rect x="120" y="100" width="200" height="160"/>
+            <rect x="340" y="100" width="360" height="120"/>
+            <rect x="340" y="240" width="180" height="200"/>
+            <rect x="540" y="240" width="160" height="200"/>
+            <rect x="120" y="280" width="200" height="160"/>
+            <path d="M320 180h40M320 340h40" stroke-dasharray="4 6"/>
+            <path d="M200 260v80M500 100v140" stroke-width="0.5"/>
+            <text x="400" y="580" fill="currentColor" stroke="none" font-size="10" letter-spacing="2" opacity="0.7">N 51°30′ · W 0°07′</text>
+            <path d="M60 300h20M720 300h20" stroke-width="0.5"/>
+            <use href="#icon-compass-star" x="392" y="268" width="16" height="16" opacity="0.6"/>
+          </g>
+        </svg>
+        <div class="hero__vignette"></div>
+      </div>
+      <div class="hero__content">
+        <p class="section__label">Magical Spatial Intelligence</p>
+        <img class="hero__logo" src="assets/logo.png" alt="CARTAWIZ — Spatial Audits, Hidden Spaces, Safer Tomorrows" width="460" height="460">
+        <h1 id="hero-heading">Know every corner of your magic.</h1>
+        <p class="hero__lead">Professional spatial mapping and magical property audits for estates, institutions, and businesses where ordinary architecture only tells half the story.</p>
+        <div class="btn-group" style="justify-content:center">
+          <a class="btn btn--primary" href="request-audit.html">Request a Property Audit</a>
+          <a class="btn btn--outline" href="#services">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section" id="problem" aria-labelledby="problem-heading">
+      <div class="section__inner">
+        <h2 id="problem-heading" class="reveal">Your Blueprint Doesn't Tell the Whole Story.</h2>
+        <p class="section__lead reveal">Centuries-old manor houses are full of forgotten dark artifacts, unstable floorboards, and hidden passages. We map your entire estate in real time so you know exactly what is lurking behind your walls.</p>
+        <div class="problem-grid">
+          <ol class="problem-list reveal">
+            <li><span class="problem-list__num">01</span> undocumented rooms</li>
+            <li><span class="problem-list__num">02</span> concealed passages</li>
+            <li><span class="problem-list__num">03</span> unstable spatial enchantments</li>
+            <li><span class="problem-list__num">04</span> hidden objects</li>
+            <li><span class="problem-list__num">05</span> magical residue</li>
+            <li><span class="problem-list__num">06</span> altered floor plans</li>
+            <li><span class="problem-list__num">07</span> expansion charms</li>
+            <li><span class="problem-list__num">08</span> inaccessible spaces</li>
+          </ol>
+          <div class="problem-diagram reveal" role="img" aria-label="Interactive floor plan with anomaly hotspots">
+            <svg viewBox="0 0 400 300" class="motif" aria-hidden="true">
+              <rect x="20" y="20" width="360" height="260" stroke-width="1"/>
+              <rect x="50" y="50" width="120" height="90"/>
+              <rect x="190" y="50" width="160" height="70"/>
+              <rect x="190" y="140" width="90" height="110"/>
+              <rect x="300" y="140" width="50" height="110"/>
+              <rect x="50" y="160" width="120" height="90"/>
+              <path d="M170 95h20" stroke-dasharray="3 5"/>
+            </svg>
+            <button type="button" class="problem-hotspot" data-hotspot="1" style="left:75%;top:35%" aria-label="Hidden chamber">
+              <span class="problem-hotspot__dot"></span>
+            </button>
+            <button type="button" class="problem-hotspot" data-hotspot="2" style="left:55%;top:55%" aria-label="Spatial anomaly">
+              <span class="problem-hotspot__dot"></span>
+            </button>
+            <button type="button" class="problem-hotspot" data-hotspot="3" style="left:30%;top:70%" aria-label="Unstable enchantment">
+              <span class="problem-hotspot__dot"></span>
+            </button>
+            <button type="button" class="problem-hotspot" data-hotspot="4" style="left:45%;top:28%" aria-label="Undocumented passage">
+              <span class="problem-hotspot__dot"></span>
+            </button>
+            <div class="problem-callout" data-hotspot="1" style="left:58%;top:22%">
+              <svg width="60" height="40" class="motif"><line class="callout-line" x1="60" y1="40" x2="10" y2="8" stroke-width="1"/></svg>
+              <span class="problem-callout__label">Hidden Chamber</span>
+            </div>
+            <div class="problem-callout" data-hotspot="2" style="left:62%;top:48%">
+              <svg width="50" height="30" class="motif"><line class="callout-line" x1="0" y1="30" x2="40" y2="5" stroke-width="1"/></svg>
+              <span class="problem-callout__label">Spatial Anomaly</span>
+            </div>
+            <div class="problem-callout" data-hotspot="3" style="left:8%;top:58%">
+              <svg width="70" height="35" class="motif"><line class="callout-line" x1="70" y1="10" x2="20" y2="30" stroke-width="1"/></svg>
+              <span class="problem-callout__label">Unstable Enchantment</span>
+            </div>
+            <div class="problem-callout" data-hotspot="4" style="left:18%;top:12%">
+              <svg width="55" height="45" class="motif"><line class="callout-line" x1="55" y1="45" x2="30" y2="15" stroke-width="1"/></svg>
+              <span class="problem-callout__label">Undocumented Passage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="how-it-works" aria-labelledby="process-heading">
+      <div class="section__inner">
+        <h2 id="process-heading" class="reveal">From Mystery to Map.</h2>
+        <div class="timeline reveal">
+          <span class="timeline__line" aria-hidden="true"></span>
+          <article>
+            <p class="timeline__step-num">01</p>
+            <h3 class="timeline__step-title">Survey</h3>
+            <p id="PROCESS-01">Our specialists inspect the property's magical and physical structure.</p>
+          </article>
+          <article>
+            <p class="timeline__step-num">02</p>
+            <h3 class="timeline__step-title">Detect</h3>
+            <p id="PROCESS-02">Localized detection charms identify concealed and anomalous spaces.</p>
+          </article>
+          <article>
+            <p class="timeline__step-num">03</p>
+            <h3 class="timeline__step-title">Map</h3>
+            <p id="PROCESS-03">The property is transformed into a detailed spatial map.</p>
+          </article>
+          <article>
+            <p class="timeline__step-num">04</p>
+            <h3 class="timeline__step-title">Report</h3>
+            <p id="PROCESS-04">The client receives a professional property audit identifying risks, hidden spaces and structural anomalies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <div class="section__inner">
+        <h2 id="services-heading" class="visually-hidden">Services</h2>
+        <div class="services-grid reveal-stagger">
+          <article class="service-card reveal">
+            <svg class="service-card__icon motif" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="24" height="20" stroke-width="1"/><path d="M4 14h24M16 6v20" stroke-width="0.75"/></svg>
+            <h3>Complete Property Audit</h3>
+            <p id="SERVICE-01">Comprehensive mapping of an entire magical estate.</p>
+            <svg class="service-card__edge motif" viewBox="0 0 100 1" preserveAspectRatio="none"><line x1="0" y1="0.5" x2="100" y2="0.5" stroke-width="1"/></svg>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon motif" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26 L16 6 L26 26" stroke-width="1" stroke-dasharray="3 4"/><circle cx="16" cy="16" r="4" stroke-width="0.75"/></svg>
+            <h3>Hidden Space Detection</h3>
+            <p id="SERVICE-02">Locate concealed rooms, passages and undocumented areas.</p>
+            <svg class="service-card__edge motif" viewBox="0 0 100 1" preserveAspectRatio="none"><line x1="0" y1="0.5" x2="100" y2="0.5" stroke-width="1"/></svg>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon motif" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v24M4 16h24M16 16l6-6M16 16l-6-6" stroke-width="0.75"/></svg>
+            <h3>Magical Hazard Audit</h3>
+            <p id="SERVICE-03">Identify unstable enchantments, magical residue and potentially hazardous zones.</p>
+            <svg class="service-card__edge motif" viewBox="0 0 100 1" preserveAspectRatio="none"><line x1="0" y1="0.5" x2="100" y2="0.5" stroke-width="1"/></svg>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon motif" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" stroke-width="0.75"/><path d="M16 8v16M8 16h16" stroke-width="0.5"/></svg>
+            <h3>Quarterly Cartographic Update</h3>
+            <p id="SERVICE-04">Keep your property's spatial map current as magical structures change.</p>
+            <svg class="service-card__edge motif" viewBox="0 0 100 1" preserveAspectRatio="none"><line x1="0" y1="0.5" x2="100" y2="0.5" stroke-width="1"/></svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE MAP -->
+    <section class="section live-map-section" id="property-audits" aria-labelledby="livemap-heading">
+      <div class="section__inner">
+        <h2 id="livemap-heading" class="reveal">See What Ordinary Blueprints Miss.</h2>
+        <div class="live-map-layout">
+          <div>
+            <div class="map-filters-wrap">
+              <div class="map-filters" role="group" aria-label="Map layer filters">
+                <button type="button" class="map-filter" data-filter="visible" aria-pressed="true">Visible</button>
+                <button type="button" class="map-filter" data-filter="hidden" aria-pressed="false">Hidden</button>
+                <button type="button" class="map-filter" data-filter="magical" aria-pressed="false">Magical</button>
+                <button type="button" class="map-filter" data-filter="hazards" aria-pressed="false">Hazards</button>
+                <button type="button" class="map-filter map-filter--all" data-filter="all" aria-pressed="false">All Layers</button>
+              </div>
+            </div>
+            <div class="live-map-viewport">
+              <svg class="live-map-svg motif is-filter-visible" viewBox="0 0 1200 800" role="img" aria-labelledby="livemap-title">
+                <title id="livemap-title">Interactive property floor plan</title>
+                <defs>
+                  <pattern id="hazardPattern" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                    <line x1="0" y1="0" x2="0" y2="8" stroke="#C9A45C" stroke-width="1" opacity="0.35"/>
+                  </pattern>
+                </defs>
+                <!-- LAYER: VISIBLE -->
+                <g class="layer-base layer-visible">
+                  <rect x="40" y="40" width="1120" height="720" fill="none" stroke="currentColor" stroke-width="3"/>
+                  <rect x="48" y="48" width="1104" height="704" fill="none" stroke="currentColor" stroke-width="1"/>
+                  <rect x="80" y="80" width="280" height="200" stroke-width="1"/>
+                  <text class="room-label" x="120" y="120">Entrance Hall</text>
+                  <rect x="380" y="80" width="480" height="240" stroke-width="1"/>
+                  <text class="room-label" x="520" y="130">Great Hall</text>
+                  <rect x="880" y="80" width="240" height="200" stroke-width="1"/>
+                  <text class="room-label" x="920" y="130">Library</text>
+                  <rect x="880" y="300" width="240" height="180" stroke-width="1"/>
+                  <text class="room-label" x="920" y="340">Study</text>
+                  <rect x="80" y="300" width="280" height="200" stroke-width="1"/>
+                  <text class="room-label" x="120" y="340">Kitchen</text>
+                  <rect x="380" y="340" width="480" height="200" stroke-width="1"/>
+                  <text class="room-label" x="520" y="380">Conservatory</text>
+                  <path d="M380 200h480" stroke-width="1"/>
+                  <text class="room-label" x="540" y="230">Gallery Corridor</text>
+                  <path d="M200 500v200M200 500h920" stroke-width="1"/>
+                  <text class="room-label" x="220" y="620">Cellar Stair</text>
+                  <g class="presence-group">
+                    <circle class="presence-ring" cx="200" cy="180" r="6"/>
+                    <circle class="presence-marker" cx="200" cy="180" r="2"/>
+                  </g>
+                  <g class="presence-group">
+                    <circle class="presence-ring" cx="620" cy="200" r="6"/>
+                    <circle class="presence-marker" cx="620" cy="200" r="2"/>
+                  </g>
+                  <g class="presence-group">
+                    <circle class="presence-ring" cx="1000" cy="160" r="6"/>
+                    <circle class="presence-marker" cx="1000" cy="160" r="2"/>
+                  </g>
+                  <g class="presence-group">
+                    <circle class="presence-ring" cx="480" cy="420" r="6"/>
+                    <circle class="presence-marker" cx="480" cy="420" r="2"/>
+                  </g>
+                </g>
+                <!-- LAYER: HIDDEN -->
+                <g class="layer-overlay layer-hidden layer-draw">
+                  <path d="M880 280h-120v-40h-80" stroke-width="1" stroke-dasharray="8 6" fill="none"/>
+                  <rect x="660" y="300" width="100" height="80" stroke-width="1" stroke-dasharray="4 4" fill="none" opacity="0.9"/>
+                  <text class="room-label" x="670" y="330">Concealed Chamber</text>
+                </g>
+                <!-- LAYER: MAGICAL -->
+                <g class="layer-overlay layer-magical layer-draw">
+                  <rect x="390" y="350" width="200" height="120" stroke-width="1" fill="none"/>
+                  <rect x="370" y="330" width="240" height="160" stroke-width="0.75" fill="none" opacity="0.7"/>
+                  <rect x="350" y="310" width="280" height="200" stroke-width="0.5" fill="none" opacity="0.5"/>
+                  <text class="room-label" x="400" y="400">Expansion Charm</text>
+                  <circle cx="1050" cy="550" r="40" stroke-width="0.75" fill="none"/>
+                  <circle cx="1050" cy="550" r="60" stroke-width="0.5" fill="none"/>
+                  <path d="M990 550h120M1050 490v120" stroke-width="0.5" stroke-dasharray="2 4"/>
+                  <text class="room-label" x="1000" y="600">Distortion</text>
+                </g>
+                <!-- LAYER: HAZARDS -->
+                <g class="layer-overlay layer-hazards layer-draw">
+                  <rect class="hazard-hatch" x="100" y="320" width="120" height="100"/>
+                  <rect x="100" y="320" width="120" height="100" fill="none" stroke="#E6C77A" stroke-width="1"/>
+                  <text class="room-label" x="115" y="375" fill="#E6C77A">Unstable Zone</text>
+                  <text class="room-label" x="175" y="355" fill="#E6C77A">✦</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <aside class="map-panel reveal" aria-live="polite">
+            <h3 class="map-panel__title">Visible Architecture</h3>
+            <p class="map-panel__desc">Documented rooms, corridors, and structural walls as recorded on conventional plans.</p>
+            <ul class="map-panel__legend">
+              <li><span class="legend-swatch"></span>Solid lines — primary walls</li>
+              <li><span class="legend-swatch"></span>Labels — surveyed rooms</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE SERVE -->
+    <section class="section" aria-labelledby="audience-heading">
+      <div class="section__inner">
+        <h2 id="audience-heading" class="reveal">Who We Serve</h2>
+        <div class="audience-grid reveal">
+          <div class="audience-grid__item">
+            <p class="audience-grid__num">I</p>
+            <h3>Private Estates</h3>
+            <p class="text-muted">For owners of historic magical properties.</p>
+          </div>
+          <div class="audience-grid__item">
+            <p class="audience-grid__num">II</p>
+            <h3>Magical Businesses</h3>
+            <p class="text-muted">For shops, warehouses, hotels and commercial properties.</p>
+          </div>
+          <div class="audience-grid__item">
+            <p class="audience-grid__num">III</p>
+            <h3>Institutions</h3>
+            <p class="text-muted">For schools, museums, libraries and historic buildings.</p>
+          </div>
+          <div class="audience-grid__item">
+            <p class="audience-grid__num">IV</p>
+            <h3>Architects & amp; Renovators</h3>
+            <p class="text-muted">For professionals working on magically altered structures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPORT -->
+    <section class="section" aria-labelledby="report-heading">
+      <div class="section__inner">
+        <h2 id="report-heading" class="reveal">Cartawiz Report</h2>
+        <div class="report-wrap reveal">
+          <article class="report-sheet">
+            <header class="report-sheet__header">
+              <div>
+                <p class="report-sheet__title">Property Audit</p>
+                <p class="text-muted" style="font-size:11px;letter-spacing:.2em">CARTAWIZ SPATIAL INTELLIGENCE</p>
+              </div>
+              <p class="report-sheet__doc">CW-2026-1002</p>
+            </header>
+            <table class="report-table">
+              <tr><th>Property</th><td>Blackthorn Estate</td></tr>
+              <tr><th>Audit Status</th><td>Complete</td></tr>
+              <tr><th>Spatial Coverage</th><td>98.7%</td></tr>
+              <tr><th>Hidden Spaces</th><td>7</td></tr>
+              <tr><th>Magical Anomalies</th><td>3</td></tr>
+              <tr><th>Hazard Level</th><td>Low</td></tr>
+              <tr><th>Last Audit</th><td>02 October 2026</td></tr>
+            </table>
+            <footer class="report-sheet__footer">
+              <svg class="report-thumb motif" viewBox="0 0 80 60" aria-hidden="true">
+                <rect x="5" y="5" width="70" height="50" stroke-width="0.75"/>
+                <rect x="15" y="15" width="25" height="20"/><rect x="45" y="15" width="25" height="30"/>
+              </svg>
+              <svg class="report-stamp motif" viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="20" stroke-width="0.75"/>
+                <path d="M24 8v32M8 24h32M24 24l10-10M24 24L14 14" stroke-width="0.75"/>
+              </svg>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" aria-labelledby="pricing-heading">
+      <div class="section__inner">
+        <h2 id="pricing-heading" class="reveal">Engagement Model</h2>
+        <div class="pricing-grid reveal">
+          <div class="pricing-col">
+            <p class="pricing-col__roman">I</p>
+            <h3>Initial Audit</h3>
+            <p class="text-muted">One-time comprehensive property mapping.</p>
+            <p class="pricing-col__meta">Scope</p>
+            <p class="text-muted" style="font-size:.875rem">Full-estate survey, detection pass, cartographic deliverable, and executive audit summary.</p>
+            <p class="pricing-col__meta">Deliverables</p>
+            <p class="text-muted" style="font-size:.875rem">Bound spatial report, layered plan archive, hazard register.</p>
+            <p class="pricing-col__fee">Fee by proposal</p>
+            <a class="btn btn--text" href="#contact">Enquire</a>
+          </div>
+          <div class="pricing-col">
+            <p class="pricing-col__roman">II</p>
+            <h3>Cartawiz Continuous</h3>
+            <p class="text-muted">Quarterly spatial updates and monitoring.</p>
+            <p class="pricing-col__meta">Scope</p>
+            <p class="text-muted" style="font-size:.875rem">Re-survey of volatile zones, charm drift analysis, updated layers.</p>
+            <p class="pricing-col__meta">Deliverables</p>
+            <p class="text-muted" style="font-size:.875rem">Quarterly emendations, change log, advisory briefing.</p>
+            <p class="pricing-col__fee">Fee by proposal</p>
+            <a class="btn btn--text" href="#contact">Enquire</a>
+          </div>
+          <div class="pricing-col">
+            <p class="pricing-col__roman">III</p>
+            <h3>Cartawiz Commercial</h3>
+            <p class="text-muted">Custom audits and recurring monitoring for businesses and institutions.</p>
+            <p class="pricing-col__meta">Scope</p>
+            <p class="text-muted" style="font-size:.875rem">Multi-building portfolios, compliance mapping, staff safety corridors.</p>
+            <p class="pricing-col__meta">Deliverables</p>
+            <p class="text-muted" style="font-size:.875rem">Institutional audit suite, integration with renovation plans.</p>
+            <p class="pricing-col__fee">Fee by proposal</p>
+            <a class="btn btn--text" href="#contact">Enquire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CARTAWIZ -->
+    <section class="section" id="about" aria-labelledby="stats-heading">
+      <div class="section__inner">
+        <h2 id="stats-heading" class="reveal">Why Cartawiz</h2>
+        <div class="stats-row">
+          <div class="stat stat--centuries reveal">
+            <p class="stat__value">Centuries</p>
+            <p class="stat__label">of magical architecture we can survey</p>
+          </div>
+          <div class="stat reveal" data-count="360" data-suffix="°">
+            <p class="stat__value">0°</p>
+            <p class="stat__label">spatial property analysis</p>
+          </div>
+          <div class="stat reveal" data-count="4">
+            <p class="stat__value">0</p>
+            <p class="stat__label">layers of property intelligence</p>
+          </div>
+        </div>
+        <p class="stats-tagline reveal"><em>Physical. Hidden. Magical. Hazardous.</em></p>
+        <div class="about-block reveal" style="margin-top:var(--space-6)">
+          <p class="text-muted">CARTAWIZ combines localized tracking charms—Homonculous charms, Revelio variants, and spatial-expansion tracking—to deliver advisory audits for properties where conventional surveying stops at the façade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-final" id="contact" aria-labelledby="cta-heading">
+      <div class="cta-final__bg line-draw" aria-hidden="true">
+        <svg class="cta-final__compass motif" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="85" stroke-width="0.5"/>
+          <use href="#icon-compass-star" x="88" y="88" width="24" height="24"/>
+        </svg>
+        <svg viewBox="0 0 800 800" style="position:absolute;inset:0;width:100%;height:100%">
+          <circle class="cta-ring" cx="400" cy="400" r="120" fill="none" stroke="currentColor" stroke-width="0.75" style="stroke-dasharray:800;stroke-dashoffset:800"/>
+          <circle class="cta-ring" cx="400" cy="400" r="200" fill="none" stroke="currentColor" stroke-width="0.5" style="stroke-dasharray:1200;stroke-dashoffset:1200"/>
+          <circle class="cta-ring" cx="400" cy="400" r="280" fill="none" stroke="currentColor" stroke-width="0.5" style="stroke-dasharray:1600;stroke-dashoffset:1600"/>
+          <line class="cta-plan-line" x1="400" y1="120" x2="400" y2="680" stroke="currentColor" stroke-width="0.5" style="stroke-dasharray:560;stroke-dashoffset:560"/>
+          <line class="cta-plan-line" x1="120" y1="400" x2="680" y2="400" stroke="currentColor" stroke-width="0.5" style="stroke-dasharray:560;stroke-dashoffset:560"/>
+        </svg>
+      </div>
+      <div class="cta-final__content">
+        <h2 id="cta-heading" class="reveal">What's Behind Your Walls?</h2>
+        <p class="reveal text-muted">Find out before your property finds out for you.</p>
+        <div class="contact-block reveal">
+          <p class="text-muted">Commission a comprehensive audit or discuss quarterly cartographic coverage.</p>
+          <p><a href="mailto:audit@cartawiz.example">audit@cartawiz.example</a></p>
+        </div>
+        <div class="btn-group reveal" style="justify-content:center">
+          <a class="btn btn--primary" href="request-audit.html">Request a Cartawiz Audit</a>
+          <a class="btn btn--outline" href="mailto:audit@cartawiz.example">Contact Cartawiz</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__logo">
+      <img src="assets/logo.png" alt="CARTAWIZ" width="160" height="48">
+    </div>
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#property-audits">Property Audits</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="site-footer__legal">© 2026 CARTAWIZ. All rights reserved. Magical property audits are advisory in nature.</p>
+    <p class="site-footer__tagline">Spatial Audits • Hidden Spaces • Safer Tomorrows</p>
+  </footer>
+
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
